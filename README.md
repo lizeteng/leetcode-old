@@ -8,4 +8,5 @@
 | 007 | [反转整数](https://leetcode-cn.com/problems/reverse-integer/description/) | [Java](./src/main/java/com/lizeteng/leetcode/easy/_007/Solution.java) | 简单 |
 | 009 | [回文数](https://leetcode-cn.com/problems/palindrome-number/description/) | [Java](./src/main/java/com/lizeteng/leetcode/easy/_009/Solution.java) | 简单 |
 | 019 | [删除链表的倒数第N个节点](https://leetcode-cn.com/problems/remove-nth-node-from-end-of-list/description/) | [Java](./src/main/java/com/lizeteng/leetcode/medium/_019/Solution.java) | 中等 |
-| 021 | [合并两个有序链表](https://leetcode-cn.com/problems/merge-two-sorted-lists/description/) | [Java](./src/main/java/com/lizeteng/leetcode/easy/_021/Solution.java) | 简单
+| 021 | [合并两个有序链表](https://leetcode-cn.com/problems/merge-two-sorted-lists/description/) | [Java](./src/main/java/com/lizeteng/leetcode/easy/_021/Solution.java) | 简单 |
+| 024 | [两两交换链表中的节点](https://leetcode-cn.com/problems/swap-nodes-in-pairs/description/) | [Java](./src/main/java/com/lizeteng/leetcode/medium/_024/Solution.java) | 中等 |
