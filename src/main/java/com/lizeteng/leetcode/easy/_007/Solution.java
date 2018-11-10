@@ -34,11 +34,11 @@ public class Solution {
             tempInt = x % 10;
             x /= 10;
 
-            if ((result < minResult) || ((result == minResult) && (tempInt < -8))) {
+            if (result < minResult || (result == minResult && tempInt < -8)) {
                 return 0;
             }
 
-            if ((result > maxResult) || ((result == maxResult) && (tempInt > 7))) {
+            if (result > maxResult || (result == maxResult && tempInt > 7)) {
                 return 0;
             }
 
