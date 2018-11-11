@@ -11,3 +11,4 @@
 | 020 | [有效的括号](https://leetcode-cn.com/problems/valid-parentheses/description/) | [Java](./src/main/java/com/lizeteng/leetcode/easy/_020/Solution.java) | 简单 |
 | 021 | [合并两个有序链表](https://leetcode-cn.com/problems/merge-two-sorted-lists/description/) | [Java](./src/main/java/com/lizeteng/leetcode/easy/_021/Solution.java) | 简单 |
 | 024 | [两两交换链表中的节点](https://leetcode-cn.com/problems/swap-nodes-in-pairs/description/) | [Java](./src/main/java/com/lizeteng/leetcode/medium/_024/Solution.java) | 中等 |
+| 225 | [用队列实现栈](https://leetcode-cn.com/problems/implement-stack-using-queues/description/) | [Java](./src/main/java/com/lizeteng/leetcode/easy/_225/MyStack.java) | 简单 |
