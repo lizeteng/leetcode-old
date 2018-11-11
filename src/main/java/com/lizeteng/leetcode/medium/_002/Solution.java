@@ -1,4 +1,4 @@
-package com.lizeteng.leetcode.hard._002;
+package com.lizeteng.leetcode.medium._002;
 
 import com.lizeteng.leetcode.base.ListNode;
 
@@ -21,10 +21,9 @@ public class Solution {
     public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
         ListNode l3 = new ListNode(0), result = l3;
         boolean notNull1 = l1 != null, notNull2 = l2 != null;
-        int tempVal;
 
         while (notNull1 || notNull2) {
-            tempVal = (notNull1 ? l1.val : 0) + (notNull2 ? l2.val : 0) + l3.val;
+            int tempInt = (notNull1 ? l1.val : 0) + (notNull2 ? l2.val : 0) + l3.val;
 
             l1 = notNull1 ? l1.next : null;
             l2 = notNull2 ? l2.next : null;
@@ -32,11 +31,11 @@ public class Solution {
             notNull1 = l1 != null;
             notNull2 = l2 != null;
 
-            if (tempVal >= 10) {
-                l3.val = tempVal - 10;
+            if (tempInt >= 10) {
+                l3.val = tempInt - 10;
                 l3.next = new ListNode(1);
             } else {
-                l3.val = tempVal;
+                l3.val = tempInt;
                 l3.next = (notNull1 || notNull2) ? new ListNode(0) : null;
             }
 

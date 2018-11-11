@@ -28,10 +28,9 @@ public class Solution {
         int result = 0;
         int minResult = Integer.MIN_VALUE / 10;
         int maxResult = Integer.MAX_VALUE / 10;
-        int tempInt;
 
         while (x != 0) {
-            tempInt = x % 10;
+            int tempInt = x % 10;
             x /= 10;
 
             if (result < minResult || (result == minResult && tempInt < -8)) {

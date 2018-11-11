@@ -38,26 +38,32 @@ import java.util.Map;
  * @date 2018/11/10
  */
 public class Solution {
+    
+    private static final Map<Character, Character> PARENTHESES = new HashMap<>(3);
+
+    static {
+        PARENTHESES.put(')', '(');
+        PARENTHESES.put(']', '[');
+        PARENTHESES.put('}', '{');
+    }
 
     public boolean isValid(String s) {
         int length = s.length();
         LinkedList<Character> linkedStack = new LinkedList<>();
-        Map<Character, Character> map = new HashMap<>(3);
-        map.put(')', '(');
-        map.put(']', '[');
-        map.put('}', '{');
 
         for (int i = 0; i < length; i++) {
-            if (!map.containsKey(s.charAt(i))) {
-                linkedStack.push(s.charAt(i));
+            char tempChar = s.charAt(i);
+
+            if (!PARENTHESES.containsKey(tempChar)) {
+                linkedStack.push(tempChar);
             } else {
-                if (linkedStack.size() == 0 || !map.get(s.charAt(i)).equals(linkedStack.pop())) {
+                if (linkedStack.size() == 0 || !PARENTHESES.get(tempChar).equals(linkedStack.pop())) {
                     return false;
                 }
             }
         }
 
-        return linkedStack.size() == 0;
+        return linkedStack.isEmpty();
     }
 
     public static void main(String[] args) {
