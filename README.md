@@ -12,6 +12,7 @@
 | 021 | [合并两个有序链表](https://leetcode-cn.com/problems/merge-two-sorted-lists/description/) | [Java](./src/main/java/com/lizeteng/leetcode/easy/_021/Solution.java) | 简单 |
 | 024 | [两两交换链表中的节点](https://leetcode-cn.com/problems/swap-nodes-in-pairs/description/) | [Java](./src/main/java/com/lizeteng/leetcode/medium/_024/Solution.java) | 中等 |
 | 141 | [环形链表](https://leetcode-cn.com/problems/linked-list-cycle/description/) | [Java](./src/main/java/com/lizeteng/leetcode/easy/_141/Solution.java) | 简单 |
+| 206 | [反转链表](https://leetcode-cn.com/problems/reverse-linked-list/description/) | [Java](./src/main/java/com/lizeteng/leetcode/easy/_206/Solution.java) | 简单 |
 | 225 | [用队列实现栈](https://leetcode-cn.com/problems/implement-stack-using-queues/description/) | [Java](./src/main/java/com/lizeteng/leetcode/easy/_225/MyStack.java) | 简单 |
 | 232 | [用栈实现队列](https://leetcode-cn.com/problems/implement-queue-using-stacks/description/) | [Java](./src/main/java/com/lizeteng/leetcode/easy/_232/MyQueue.java) | 简单 |
 | 239 | [滑动窗口最大值](https://leetcode-cn.com/problems/sliding-window-maximum/description/) | [Java](./src/main/java/com/lizeteng/leetcode/hard/_239/Solution.java) | 困难 |

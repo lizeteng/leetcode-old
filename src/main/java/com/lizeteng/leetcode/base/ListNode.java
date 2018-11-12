@@ -24,5 +24,7 @@ public class ListNode {
 
             tempListNode = tempListNode.next;
         }
+
+        System.out.println();
     }
 }
