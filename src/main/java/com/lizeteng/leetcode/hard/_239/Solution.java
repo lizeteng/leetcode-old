@@ -1,8 +1,8 @@
 package com.lizeteng.leetcode.hard._239;
 
+import java.util.ArrayDeque;
 import java.util.Arrays;
 import java.util.Deque;
-import java.util.LinkedList;
 
 /**
  * 给定一个数组 nums，有一个大小为 k 的滑动窗口从数组的最左侧移动到数组的最右侧。
@@ -36,7 +36,7 @@ public class Solution {
         }
 
         int[] result = new int[nums.length - k + 1];
-        Deque<Integer> window = new LinkedList<>();
+        Deque<Integer> window = new ArrayDeque<>(k);
 
         for (int i = 0, j = 0; i < nums.length; i++) {
             if (i >= k && window.peekFirst() <= i - k) {
