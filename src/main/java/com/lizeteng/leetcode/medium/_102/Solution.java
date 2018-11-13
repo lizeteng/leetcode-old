@@ -2,7 +2,7 @@ package com.lizeteng.leetcode.medium._102;
 
 import com.lizeteng.leetcode.base.TreeNode;
 
-import java.util.LinkedList;
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -28,7 +28,7 @@ import java.util.List;
 public class Solution {
 
     public List<List<Integer>> levelOrder(TreeNode root) {
-        List<List<Integer>> result = new LinkedList<>();
+        List<List<Integer>> result = new ArrayList<>();
 
         levelOrderInternally(result, 0, root);
 
@@ -41,7 +41,7 @@ public class Solution {
         }
 
         if (index >= result.size()) {
-            result.add(new LinkedList<>());
+            result.add(new ArrayList<>());
         }
 
         result.get(index).add(treeNode.val);
