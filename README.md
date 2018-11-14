@@ -13,6 +13,7 @@
 | 021 | [合并两个有序链表](https://leetcode-cn.com/problems/merge-two-sorted-lists/description/) | [Java](./src/main/java/com/lizeteng/leetcode/easy/_021/Solution.java) | 简单 |
 | 024 | [两两交换链表中的节点](https://leetcode-cn.com/problems/swap-nodes-in-pairs/description/) | [Java](./src/main/java/com/lizeteng/leetcode/medium/_024/Solution.java) | 中等 |
 | 086 | [分隔链表](https://leetcode-cn.com/problems/partition-list/description/) | [Java](./src/main/java/com/lizeteng/leetcode/medium/_086/Solution.java) | 中等 |
+| 098 | [验证二叉搜索树](https://leetcode-cn.com/problems/validate-binary-search-tree/description/) | [Java](./src/main/java/com/lizeteng/leetcode/medium/_098/Solution.java) | 中等 |
 | 102 | [二叉树的层次遍历](https://leetcode-cn.com/problems/binary-tree-level-order-traversal/description/) | [Java](./src/main/java/com/lizeteng/leetcode/medium/_102/Solution.java) | 中等 |
 | 141 | [环形链表](https://leetcode-cn.com/problems/linked-list-cycle/description/) | [Java](./src/main/java/com/lizeteng/leetcode/easy/_141/Solution.java) | 简单 |
 | 206 | [反转链表](https://leetcode-cn.com/problems/reverse-linked-list/description/) | [Java](./src/main/java/com/lizeteng/leetcode/easy/_206/Solution.java) | 简单 |
