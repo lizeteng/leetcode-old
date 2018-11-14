@@ -35,21 +35,21 @@ public class Solution {
         return result;
     }
 
-    private void levelOrderInternally(List<List<Integer>> result, int index, TreeNode treeNode) {
+    private void levelOrderInternally(List<List<Integer>> result, int levelIndex, TreeNode treeNode) {
         if (treeNode == null) {
             return;
         }
 
-        if (index >= result.size()) {
+        if (levelIndex >= result.size()) {
             result.add(new ArrayList<>());
         }
 
-        result.get(index).add(treeNode.val);
+        result.get(levelIndex).add(treeNode.val);
 
-        index++;
+        levelIndex++;
 
-        levelOrderInternally(result, index, treeNode.left);
-        levelOrderInternally(result, index, treeNode.right);
+        levelOrderInternally(result, levelIndex, treeNode.left);
+        levelOrderInternally(result, levelIndex, treeNode.right);
     }
 
     public static void main(String[] args) {
