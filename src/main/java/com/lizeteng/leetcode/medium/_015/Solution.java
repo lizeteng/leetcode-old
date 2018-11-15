@@ -28,7 +28,7 @@ public class Solution {
         int length = nums.length;
 
         if (nums == null || length < 3) {
-            return new ArrayList<>();
+            return result;
         }
 
         Arrays.sort(nums);
