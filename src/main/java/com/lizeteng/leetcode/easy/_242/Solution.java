@@ -11,6 +11,9 @@ package com.lizeteng.leetcode.easy._242;
  * 输入：s = "rat"，t = "car"
  * 输出：false
  *
+ * 进阶：
+ * 调整解法来应对字符串包含 unicode 字符的情况。
+ *
  * @author lizeteng
  * @date 2018/11/13
  */

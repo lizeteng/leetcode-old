@@ -12,6 +12,9 @@ import com.lizeteng.leetcode.base.ListNode;
  * 说明：
  * 给定的 n 保证是有效的。
  *
+ * 进阶：
+ * 尝试使用一趟扫描实现。
+ *
  * @author lizeteng
  * @date 2018/11/08
  */

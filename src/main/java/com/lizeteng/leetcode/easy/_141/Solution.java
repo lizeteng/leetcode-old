@@ -5,6 +5,9 @@ import com.lizeteng.leetcode.base.ListNode;
 /**
  * 给定一个链表，判断链表中是否有环。
  *
+ * 进阶：
+ * 不使用额外空间解决此题。
+ *
  * @author lizeteng
  * @date 2018/11/12
  */
