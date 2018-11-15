@@ -32,17 +32,17 @@ public class Solution {
         LinkedList<TreeNode> linkedStack = new LinkedList<>();
 
         while (treeNode != null || !linkedStack.isEmpty()) {
-            while (treeNode != null) {
+            if (treeNode != null) {
                 linkedStack.push(treeNode);
 
                 treeNode = treeNode.left;
+            } else {
+                treeNode = linkedStack.pop();
+
+                result.add(treeNode.val);
+
+                treeNode = treeNode.right;
             }
-
-            treeNode = linkedStack.pop();
-
-            result.add(treeNode.val);
-
-            treeNode = treeNode.right;
         }
 
         return result;

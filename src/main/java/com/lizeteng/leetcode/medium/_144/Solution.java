@@ -27,26 +27,21 @@ import java.util.List;
 public class Solution {
 
     public List<Integer> preorderTraversal(TreeNode root) {
+        TreeNode treeNode = root;
         List<Integer> result = new ArrayList<>();
-
-        if (root == null) {
-            return result;
-        }
-
         LinkedList<TreeNode> linkedStack = new LinkedList<>();
-        linkedStack.push(root);
 
-        while (!linkedStack.isEmpty()) {
-            TreeNode tempTreeNode = linkedStack.pop();
+        while (treeNode != null || !linkedStack.isEmpty()) {
+            if (treeNode != null) {
+                result.add(treeNode.val);
 
-            result.add(tempTreeNode.val);
+                linkedStack.push(treeNode);
 
-            if (tempTreeNode.right != null) {
-                linkedStack.push(tempTreeNode.right);
-            }
+                treeNode = treeNode.left;
+            } else {
+                treeNode = linkedStack.pop();
 
-            if (tempTreeNode.left != null) {
-                linkedStack.push(tempTreeNode.left);
+                treeNode = treeNode.right;
             }
         }
 
