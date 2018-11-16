@@ -37,16 +37,14 @@ public class Solution {
 
                 treeNode = treeNode.left;
             } else {
-                treeNode = linkedStack.peek();
+                TreeNode tempTreeNode = linkedStack.peek();
 
-                if (treeNode.right != null && treeNode.right != lastTreeNode) {
-                    treeNode = treeNode.right;
+                if (tempTreeNode.right != null && tempTreeNode.right != lastTreeNode) {
+                    treeNode = tempTreeNode.right;
                 } else {
                     lastTreeNode = linkedStack.pop();
 
-                    result.add(treeNode.val);
-
-                    treeNode = null;
+                    result.add(tempTreeNode.val);
                 }
             }
         }
