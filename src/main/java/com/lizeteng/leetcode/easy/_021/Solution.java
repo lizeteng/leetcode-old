@@ -25,17 +25,7 @@ public class Solution {
             return l1;
         }
 
-        ListNode result;
-
-        if (l1.val > l2.val) {
-            result = l2;
-            l2 = l2.next;
-        } else {
-            result = l1;
-            l1 = l1.next;
-        }
-
-        ListNode tempListNode = result;
+        ListNode result = new ListNode(0), tempListNode = result;
 
         while (l1 != null && l2 != null) {
             if (l1.val > l2.val) {
@@ -55,7 +45,7 @@ public class Solution {
             tempListNode.next = l1;
         }
 
-        return result;
+        return result.next;
     }
 
     public static void main(String[] args) {
