@@ -17,44 +17,25 @@ import com.lizeteng.leetcode.util.ListNodeUtils;
 public class Solution {
 
     public ListNode partition(ListNode head, int x) {
-        ListNode left = null;
-        ListNode leftHead = null;
-        ListNode right = null;
-        ListNode rightHead = null;
+        ListNode left = new ListNode(0),
+                leftHead = left,
+                right = new ListNode(0),
+                rightHead = right;
 
         while (head != null) {
             if (head.val >= x) {
-                if (right != null) {
-                    right.next = head;
-                    right = right.next;
-                } else {
-                    rightHead = head;
-                    right = head;
-                }
+                right = right.next = head;
             } else {
-                if (left != null) {
-                    left.next = head;
-                    left = left.next;
-                } else {
-                    leftHead = head;
-                    left = head;
-                }
+                left = left.next = head;
             }
 
             head = head.next;
         }
 
-        if (right != null) {
-            right.next = null;
-        }
+        left.next = rightHead.next;
+        right.next = null;
 
-        if (left != null) {
-            left.next = rightHead;
-        } else {
-            return rightHead;
-        }
-
-        return leftHead;
+        return leftHead.next;
     }
 
     public static void main(String[] args) {
