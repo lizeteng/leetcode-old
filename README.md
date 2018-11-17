@@ -27,6 +27,7 @@
 | 237 | [删除链表中的节点](https://leetcode-cn.com/problems/delete-node-in-a-linked-list/description/) | [Java](./src/main/java/com/lizeteng/leetcode/easy/_237/Solution.java) | 简单 |
 | 239 | [滑动窗口最大值](https://leetcode-cn.com/problems/sliding-window-maximum/description/) | [Java](./src/main/java/com/lizeteng/leetcode/hard/_239/Solution.java) | 困难 |
 | 242 | [有效的字母异位词](https://leetcode-cn.com/problems/valid-anagram/description/) | [Java](./src/main/java/com/lizeteng/leetcode/easy/_242/Solution.java) | 简单 |
+| 328 | [奇偶链表](https://leetcode-cn.com/problems/odd-even-linked-list/description/) | [Java](./src/main/java/com/lizeteng/leetcode/medium/_328/Solution.java) | 中等 |
 | 434 | [字符串中的单词数](https://leetcode-cn.com/problems/number-of-segments-in-a-string/description/) | [Java](./src/main/java/com/lizeteng/leetcode/easy/_434/Solution.java) | 简单 |
 | 703 | [数据流中的第K大元素](https://leetcode-cn.com/problems/kth-largest-element-in-a-stream/description/) | [Java](./src/main/java/com/lizeteng/leetcode/easy/_703/KthLargest.java) | 简单 |
 | 707 | [设计链表](https://leetcode-cn.com/problems/design-linked-list/description/) | [Java](./src/main/java/com/lizeteng/leetcode/easy/_707/MyLinkedList.java) | 简单 |
