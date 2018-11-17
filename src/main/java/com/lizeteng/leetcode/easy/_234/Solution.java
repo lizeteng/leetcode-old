@@ -1,6 +1,7 @@
 package com.lizeteng.leetcode.easy._234;
 
 import com.lizeteng.leetcode.base.ListNode;
+import com.lizeteng.leetcode.util.ListNodeUtils;
 
 /**
  * 请判断一个链表是否为回文链表。
@@ -51,10 +52,7 @@ public class Solution {
     }
 
     public static void main(String[] args) {
-        ListNode listNode = new ListNode(1);
-        listNode.next = new ListNode(2);
-        listNode.next.next = new ListNode(2);
-        listNode.next.next.next = new ListNode(1);
+        ListNode listNode = ListNodeUtils.getListNode(1, 2, 2, 1);
 
         System.out.println(new Solution().isPalindrome(listNode));
     }

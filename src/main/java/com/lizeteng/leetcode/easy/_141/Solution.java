@@ -1,6 +1,7 @@
 package com.lizeteng.leetcode.easy._141;
 
 import com.lizeteng.leetcode.base.ListNode;
+import com.lizeteng.leetcode.util.ListNodeUtils;
 
 /**
  * 给定一个链表，判断链表中是否有环。
@@ -34,9 +35,7 @@ public class Solution {
     }
 
     public static void main(String[] args) {
-        ListNode listNode = new ListNode(1);
-        listNode.next = new ListNode(2);
-        listNode.next.next = listNode;
+        ListNode listNode = ListNodeUtils.getListNode(1, 2);
 
         System.out.println(new Solution().hasCycle(listNode));
     }

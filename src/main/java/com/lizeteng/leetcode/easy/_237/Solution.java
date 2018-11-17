@@ -1,6 +1,7 @@
 package com.lizeteng.leetcode.easy._237;
 
 import com.lizeteng.leetcode.base.ListNode;
+import com.lizeteng.leetcode.util.ListNodeUtils;
 
 /**
  * 编写一个函数，使其可以删除某个链表中给定的（非末尾）节点，给定要求被删除的节点。
@@ -32,15 +33,12 @@ public class Solution {
     }
 
     public static void main(String[] args) {
-        ListNode listNode = new ListNode(4);
-        listNode.next = new ListNode(5);
-        listNode.next.next = new ListNode(1);
-        listNode.next.next.next = new ListNode(9);
+        ListNode listNode = ListNodeUtils.getListNode(4, 5, 1, 9);
 
-        listNode.printAll();
+        ListNodeUtils.printAll(listNode);
 
         new Solution().deleteNode(listNode.next);
 
-        listNode.printAll();
+        ListNodeUtils.printAll(listNode);
     }
 }

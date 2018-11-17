@@ -15,16 +15,4 @@ public class ListNode {
     public ListNode(int x) {
         val = x;
     }
-
-    public void printAll() {
-        ListNode tempListNode = this;
-
-        while (tempListNode != null) {
-            System.out.print(tempListNode.val + " ");
-
-            tempListNode = tempListNode.next;
-        }
-
-        System.out.println();
-    }
 }

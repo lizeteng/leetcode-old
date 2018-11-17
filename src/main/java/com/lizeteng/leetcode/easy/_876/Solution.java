@@ -1,6 +1,7 @@
 package com.lizeteng.leetcode.easy._876;
 
 import com.lizeteng.leetcode.base.ListNode;
+import com.lizeteng.leetcode.util.ListNodeUtils;
 
 /**
  * 给定一个带有头结点 head 的非空单链表，返回链表的中间结点。
@@ -35,15 +36,10 @@ public class Solution {
     }
 
     public static void main(String[] args) {
-        ListNode listNode = new ListNode(1);
-        listNode.next = new ListNode(2);
-        listNode.next.next = new ListNode(3);
-        listNode.next.next.next = new ListNode(4);
-        listNode.next.next.next.next = new ListNode(5);
-        listNode.next.next.next.next.next = new ListNode(6);
+        ListNode listNode = ListNodeUtils.getListNode(1, 2, 3, 4, 5, 6);
 
-        listNode.printAll();
+        ListNodeUtils.printAll(listNode);
 
-        new Solution().middleNode(listNode).printAll();
+        ListNodeUtils.printAll(new Solution().middleNode(listNode));
     }
 }

@@ -1,6 +1,7 @@
 package com.lizeteng.leetcode.medium._019;
 
 import com.lizeteng.leetcode.base.ListNode;
+import com.lizeteng.leetcode.util.ListNodeUtils;
 
 /**
  * 给定一个链表，删除链表的倒数第 n 个节点，并且返回链表的头结点。
@@ -46,9 +47,8 @@ public class Solution {
     }
 
     public static void main(String[] args) {
-        ListNode listNode = new ListNode(1);
-        listNode.next = new ListNode(2);
+        ListNode listNode = ListNodeUtils.getListNode(1, 2);
 
-        new Solution().removeNthFromEnd(listNode, 2).printAll();
+        ListNodeUtils.printAll(new Solution().removeNthFromEnd(listNode, 2));
     }
 }

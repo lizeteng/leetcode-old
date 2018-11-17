@@ -1,6 +1,7 @@
 package com.lizeteng.leetcode.medium._024;
 
 import com.lizeteng.leetcode.base.ListNode;
+import com.lizeteng.leetcode.util.ListNodeUtils;
 
 /**
  * 给定一个链表，两两交换其中相邻的节点，并返回交换后的链表。
@@ -36,11 +37,10 @@ public class Solution {
     }
 
     public static void main(String[] args) {
-        ListNode listNode = new ListNode(1);
-        listNode.next = new ListNode(2);
-        listNode.next.next = new ListNode(3);
-        listNode.next.next.next = new ListNode(4);
+        ListNode listNode = ListNodeUtils.getListNode(1, 2, 3, 4);
 
-        new Solution().swapPairs(listNode).printAll();
+        ListNodeUtils.printAll(listNode);
+
+        ListNodeUtils.printAll(new Solution().swapPairs(listNode));
     }
 }

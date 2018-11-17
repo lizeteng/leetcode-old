@@ -1,6 +1,7 @@
 package com.lizeteng.leetcode.medium._002;
 
 import com.lizeteng.leetcode.base.ListNode;
+import com.lizeteng.leetcode.util.ListNodeUtils;
 
 /**
  * 给定两个非空链表来表示两个非负整数。
@@ -46,9 +47,9 @@ public class Solution {
     }
 
     public static void main(String[] args) {
-        ListNode l1 = new ListNode(9);
-        ListNode l2 = new ListNode(9);
+        ListNode l1 = ListNodeUtils.getListNode(9);
+        ListNode l2 = ListNodeUtils.getListNode(9);
 
-        new Solution().addTwoNumbers(l1, l2).printAll();
+        ListNodeUtils.printAll(new Solution().addTwoNumbers(l1, l2));
     }
 }
