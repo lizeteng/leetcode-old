@@ -19,10 +19,8 @@ import com.lizeteng.leetcode.util.ListNodeUtils;
 public class Solution {
 
     public ListNode swapPairs(ListNode head) {
-        ListNode prev, current, nextNext, result;
-        prev = new ListNode(0);
+        ListNode prev = new ListNode(0), current = null, nextNext = null, result = prev;
         prev.next = head;
-        result = prev;
 
         while (prev.next != null && prev.next.next != null) {
             current = prev.next;

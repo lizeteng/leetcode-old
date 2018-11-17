@@ -14,9 +14,9 @@ package com.lizeteng.leetcode.easy._434;
 public class Solution {
 
     public int countSegments(String s) {
-        int length;
+        int length = s.length();
 
-        if (s == null || (length = s.length()) == 0) {
+        if (s == null || length == 0) {
             return 0;
         }
 

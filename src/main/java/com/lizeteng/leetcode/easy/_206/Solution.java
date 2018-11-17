@@ -21,7 +21,7 @@ import com.lizeteng.leetcode.util.ListNodeUtils;
 public class Solution {
 
     public ListNode reverseList(ListNode head) {
-        ListNode prev = null, next;
+        ListNode prev = null, next = null;
 
         while (head != null) {
             next = head.next;
