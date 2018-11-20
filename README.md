@@ -20,6 +20,7 @@
 | 102 | [二叉树的层次遍历](https://leetcode-cn.com/problems/binary-tree-level-order-traversal/description/) | [Java](./src/main/java/com/lizeteng/leetcode/medium/_102/Solution.java) | 中等 |
 | 138 | [复制带随机指针的链表](https://leetcode-cn.com/problems/copy-list-with-random-pointer/description/) | [Java](./src/main/java/com/lizeteng/leetcode/medium/_138/Solution.java) | 中等 |
 | 141 | [环形链表](https://leetcode-cn.com/problems/linked-list-cycle/description/) | [Java](./src/main/java/com/lizeteng/leetcode/easy/_141/Solution.java) | 简单 |
+| 143 | [重排链表](https://leetcode-cn.com/problems/reorder-list/description/) | [Java](./src/main/java/com/lizeteng/leetcode/medium/_143/Solution.java) | 中等 |
 | 144 | [二叉树的前序遍历](https://leetcode-cn.com/problems/binary-tree-preorder-traversal/description/) | [Java](./src/main/java/com/lizeteng/leetcode/medium/_144/Solution.java) | 中等 |
 | 145 | [二叉树的后序遍历](https://leetcode-cn.com/problems/binary-tree-postorder-traversal/description/) | [Java](./src/main/java/com/lizeteng/leetcode/hard/_145/Solution.java) | 困难 |
 | 203 | [移除链表元素](https://leetcode-cn.com/problems/remove-linked-list-elements/description/) | [Java](./src/main/java/com/lizeteng/leetcode/easy/_203/Solution.java) | 简单 |
