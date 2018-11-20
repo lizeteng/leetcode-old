@@ -18,6 +18,7 @@
 | 094 | [二叉树的中序遍历](https://leetcode-cn.com/problems/binary-tree-inorder-traversal/description/) | [Java](./src/main/java/com/lizeteng/leetcode/medium/_094/Solution.java) | 中等 |
 | 098 | [验证二叉搜索树](https://leetcode-cn.com/problems/validate-binary-search-tree/description/) | [Java](./src/main/java/com/lizeteng/leetcode/medium/_098/Solution.java) | 中等 |
 | 102 | [二叉树的层次遍历](https://leetcode-cn.com/problems/binary-tree-level-order-traversal/description/) | [Java](./src/main/java/com/lizeteng/leetcode/medium/_102/Solution.java) | 中等 |
+| 138 | [复制带随机指针的链表](https://leetcode-cn.com/problems/copy-list-with-random-pointer/description/) | [Java](./src/main/java/com/lizeteng/leetcode/medium/_138/Solution.java) | 中等 |
 | 141 | [环形链表](https://leetcode-cn.com/problems/linked-list-cycle/description/) | [Java](./src/main/java/com/lizeteng/leetcode/easy/_141/Solution.java) | 简单 |
 | 144 | [二叉树的前序遍历](https://leetcode-cn.com/problems/binary-tree-preorder-traversal/description/) | [Java](./src/main/java/com/lizeteng/leetcode/medium/_144/Solution.java) | 中等 |
 | 145 | [二叉树的后序遍历](https://leetcode-cn.com/problems/binary-tree-postorder-traversal/description/) | [Java](./src/main/java/com/lizeteng/leetcode/hard/_145/Solution.java) | 困难 |
