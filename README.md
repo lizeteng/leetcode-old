@@ -12,6 +12,7 @@
 | 020 | [有效的括号](https://leetcode-cn.com/problems/valid-parentheses/description/) | [Java](./src/main/java/com/lizeteng/leetcode/easy/_020/Solution.java) | 简单 |
 | 021 | [合并两个有序链表](https://leetcode-cn.com/problems/merge-two-sorted-lists/description/) | [Java](./src/main/java/com/lizeteng/leetcode/easy/_021/Solution.java) | 简单 |
 | 024 | [两两交换链表中的节点](https://leetcode-cn.com/problems/swap-nodes-in-pairs/description/) | [Java](./src/main/java/com/lizeteng/leetcode/medium/_024/Solution.java) | 中等 |
+| 061 | [旋转链表](https://leetcode-cn.com/problems/rotate-list/description/) | [Java](./src/main/java/com/lizeteng/leetcode/medium/_061/Solution.java) | 中等 |
 | 083 | [删除排序链表中的重复元素](https://leetcode-cn.com/problems/remove-duplicates-from-sorted-list/description/) | [Java](./src/main/java/com/lizeteng/leetcode/easy/_083/Solution.java) | 简单 |
 | 086 | [分隔链表](https://leetcode-cn.com/problems/partition-list/description/) | [Java](./src/main/java/com/lizeteng/leetcode/medium/_086/Solution.java) | 中等 |
 | 092 | [反转链表 II](https://leetcode-cn.com/problems/reverse-linked-list-ii/description/) | [Java](./src/main/java/com/lizeteng/leetcode/medium/_092/Solution.java) | 中等 |
