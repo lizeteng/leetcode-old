@@ -14,6 +14,7 @@
 | 024 | [两两交换链表中的节点](https://leetcode-cn.com/problems/swap-nodes-in-pairs/description/) | [Java](./src/main/java/com/lizeteng/leetcode/medium/_024/Solution.java) | 中等 |
 | 083 | [删除排序链表中的重复元素](https://leetcode-cn.com/problems/remove-duplicates-from-sorted-list/description/) | [Java](./src/main/java/com/lizeteng/leetcode/easy/_083/Solution.java) | 简单 |
 | 086 | [分隔链表](https://leetcode-cn.com/problems/partition-list/description/) | [Java](./src/main/java/com/lizeteng/leetcode/medium/_086/Solution.java) | 中等 |
+| 092 | [反转链表 II](https://leetcode-cn.com/problems/reverse-linked-list-ii/description/) | [Java](./src/main/java/com/lizeteng/leetcode/medium/_092/Solution.java) | 中等 |
 | 094 | [二叉树的中序遍历](https://leetcode-cn.com/problems/binary-tree-inorder-traversal/description/) | [Java](./src/main/java/com/lizeteng/leetcode/medium/_094/Solution.java) | 中等 |
 | 098 | [验证二叉搜索树](https://leetcode-cn.com/problems/validate-binary-search-tree/description/) | [Java](./src/main/java/com/lizeteng/leetcode/medium/_098/Solution.java) | 中等 |
 | 102 | [二叉树的层次遍历](https://leetcode-cn.com/problems/binary-tree-level-order-traversal/description/) | [Java](./src/main/java/com/lizeteng/leetcode/medium/_102/Solution.java) | 中等 |
