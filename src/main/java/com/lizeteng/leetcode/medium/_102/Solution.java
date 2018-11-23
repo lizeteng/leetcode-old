@@ -3,7 +3,9 @@ package com.lizeteng.leetcode.medium._102;
 import com.lizeteng.leetcode.base.TreeNode;
 
 import java.util.ArrayList;
+import java.util.LinkedList;
 import java.util.List;
+import java.util.Queue;
 
 /**
  * 给定一个二叉树，返回其按层次遍历的节点值。（即逐层地，从左到右访问所有节点）。
@@ -30,12 +32,46 @@ public class Solution {
     public List<List<Integer>> levelOrder(TreeNode root) {
         List<List<Integer>> result = new ArrayList<>();
 
-        levelOrderInternally(result, 0, root);
+        if (root == null) {
+            return result;
+        }
+
+        Queue<TreeNode> treeNodeQueue = new LinkedList<>();
+        treeNodeQueue.offer(root);
+
+        while (!treeNodeQueue.isEmpty()) {
+            int size = treeNodeQueue.size();
+            List<Integer> levelTreeNodes = new ArrayList<>(size);
+
+            for (int i = 0; i < size; i++) {
+                TreeNode current = treeNodeQueue.poll();
+
+                levelTreeNodes.add(current.val);
+
+                if (current.left != null) {
+                    treeNodeQueue.offer(current.left);
+                }
+
+                if (current.right != null) {
+                    treeNodeQueue.offer(current.right);
+                }
+            }
+
+            result.add(levelTreeNodes);
+        }
 
         return result;
     }
 
-    private void levelOrderInternally(List<List<Integer>> result, int levelIndex, TreeNode treeNode) {
+    public List<List<Integer>> levelOrderByRecursive(TreeNode root) {
+        List<List<Integer>> result = new ArrayList<>();
+
+        levelOrderByRecursiveInternally(result, 0, root);
+
+        return result;
+    }
+
+    private void levelOrderByRecursiveInternally(List<List<Integer>> result, int levelIndex, TreeNode treeNode) {
         if (treeNode == null) {
             return;
         }
@@ -48,8 +84,8 @@ public class Solution {
 
         levelIndex++;
 
-        levelOrderInternally(result, levelIndex, treeNode.left);
-        levelOrderInternally(result, levelIndex, treeNode.right);
+        levelOrderByRecursiveInternally(result, levelIndex, treeNode.left);
+        levelOrderByRecursiveInternally(result, levelIndex, treeNode.right);
     }
 
     public static void main(String[] args) {
@@ -60,5 +96,6 @@ public class Solution {
         root.right.right = new TreeNode(7);
 
         System.out.println(new Solution().levelOrder(root));
+        System.out.println(new Solution().levelOrderByRecursive(root));
     }
 }
