@@ -57,10 +57,53 @@ public class Solution {
                 }
             }
 
-            result.add(0, levelTreeNodes);
+            result.add(levelTreeNodes);
+        }
+
+        int mid = result.size() / 2;
+
+        for (int i = 0, j = result.size() - 1; i < mid; i++){
+            List<Integer> tempList = result.get(j);
+
+            result.set(j--, result.get(i));
+            result.set(i, tempList);
         }
 
         return result;
+    }
+
+    public List<List<Integer>> levelOrderBottomByRecursive(TreeNode root) {
+        List<List<Integer>> result = new ArrayList<>();
+
+        levelOrderBottomByRecursiveInternally(result, 0, root);
+
+        int mid = result.size() / 2;
+
+        for (int i = 0, j = result.size() - 1; i < mid; i++){
+            List<Integer> tempList = result.get(j);
+
+            result.set(j--, result.get(i));
+            result.set(i, tempList);
+        }
+
+        return result;
+    }
+
+    private void levelOrderBottomByRecursiveInternally(List<List<Integer>> result, int levelIndex, TreeNode treeNode) {
+        if (treeNode == null) {
+            return;
+        }
+
+        if (levelIndex >= result.size()) {
+            result.add(new ArrayList<>());
+        }
+
+        result.get(levelIndex).add(treeNode.val);
+
+        levelIndex++;
+
+        levelOrderBottomByRecursiveInternally(result, levelIndex, treeNode.left);
+        levelOrderBottomByRecursiveInternally(result, levelIndex, treeNode.right);
     }
 
     public static void main(String[] args) {
@@ -71,5 +114,6 @@ public class Solution {
         root.right.right = new TreeNode(7);
 
         System.out.println(new Solution().levelOrderBottom(root));
+        System.out.println(new Solution().levelOrderBottomByRecursive(root));
     }
 }
