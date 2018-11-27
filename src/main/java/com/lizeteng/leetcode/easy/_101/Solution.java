@@ -20,6 +20,7 @@ import java.util.Queue;
  *    2   2
  *     \   \
  *      3   3
+ *
  * @author lizeteng
  * @date 2018/11/26
  */

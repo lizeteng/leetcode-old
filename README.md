@@ -21,6 +21,7 @@
 | 098 | [验证二叉搜索树](https://leetcode-cn.com/problems/validate-binary-search-tree/description/) | [Java](./src/main/java/com/lizeteng/leetcode/medium/_098/Solution.java) | 中等 |
 | 101 | [对称二叉树](https://leetcode-cn.com/problems/symmetric-tree/description/) | [Java](./src/main/java/com/lizeteng/leetcode/medium/_101/Solution.java) | 简单 |
 | 102 | [二叉树的层次遍历](https://leetcode-cn.com/problems/binary-tree-level-order-traversal/description/) | [Java](./src/main/java/com/lizeteng/leetcode/medium/_102/Solution.java) | 中等 |
+| 103 | [二叉树的锯齿形层次遍历](https://leetcode-cn.com/problems/binary-tree-zigzag-level-order-traversal/description/) | [Java](./src/main/java/com/lizeteng/leetcode/medium/_103/Solution.java) | 中等 |
 | 107 | [二叉树的层次遍历 II](https://leetcode-cn.com/problems/binary-tree-level-order-traversal-ii/description/) | [Java](./src/main/java/com/lizeteng/leetcode/medium/_107/Solution.java) | 简单 |
 | 138 | [复制带随机指针的链表](https://leetcode-cn.com/problems/copy-list-with-random-pointer/description/) | [Java](./src/main/java/com/lizeteng/leetcode/medium/_138/Solution.java) | 中等 |
 | 141 | [环形链表](https://leetcode-cn.com/problems/linked-list-cycle/description/) | [Java](./src/main/java/com/lizeteng/leetcode/easy/_141/Solution.java) | 简单 |
