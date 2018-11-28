@@ -41,6 +41,7 @@
 | 434 | [字符串中的单词数](https://leetcode-cn.com/problems/number-of-segments-in-a-string/description/) | [Java](./src/main/java/com/lizeteng/leetcode/easy/_434/Solution.java) | 简单 |
 | 445 | [两数相加 II](https://leetcode-cn.com/problems/add-two-numbers-ii/description/) | [Java](./src/main/java/com/lizeteng/leetcode/medium/_445/Solution.java) | 中等 |
 | 703 | [数据流中的第K大元素](https://leetcode-cn.com/problems/kth-largest-element-in-a-stream/description/) | [Java](./src/main/java/com/lizeteng/leetcode/easy/_703/KthLargest.java) | 简单 |
+| 704 | [二分查找](https://leetcode-cn.com/problems/binary-search/description/) | [Java](./src/main/java/com/lizeteng/leetcode/easy/_704/Solution.java) | 简单 |
 | 707 | [设计链表](https://leetcode-cn.com/problems/design-linked-list/description/) | [Java](./src/main/java/com/lizeteng/leetcode/easy/_707/MyLinkedList.java) | 简单 |
 | 725 | [分隔链表](https://leetcode-cn.com/problems/split-linked-list-in-parts/description/) | [Java](./src/main/java/com/lizeteng/leetcode/medium/_725/Solution.java) | 中等 |
 | 876 | [链表的中间结点](https://leetcode-cn.com/problems/middle-of-the-linked-list/description/) | [Java](./src/main/java/com/lizeteng/leetcode/easy/_876/Solution.java) | 简单 |
