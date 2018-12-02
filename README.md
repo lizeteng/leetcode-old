@@ -29,6 +29,7 @@
 | 143 | [重排链表](https://leetcode-cn.com/problems/reorder-list/description/) | [Java](./src/main/java/com/lizeteng/leetcode/medium/_143/Solution.java) | 中等 |
 | 144 | [二叉树的前序遍历](https://leetcode-cn.com/problems/binary-tree-preorder-traversal/description/) | [Java](./src/main/java/com/lizeteng/leetcode/medium/_144/Solution.java) | 中等 |
 | 145 | [二叉树的后序遍历](https://leetcode-cn.com/problems/binary-tree-postorder-traversal/description/) | [Java](./src/main/java/com/lizeteng/leetcode/hard/_145/Solution.java) | 困难 |
+| 167 | [两数之和 II - 输入有序数组](https://leetcode-cn.com/problems/two-sum-ii-input-array-is-sorted/description/) | [Java](./src/main/java/com/lizeteng/leetcode/easy/_167/Solution.java) | 简单 |
 | 203 | [移除链表元素](https://leetcode-cn.com/problems/remove-linked-list-elements/description/) | [Java](./src/main/java/com/lizeteng/leetcode/easy/_203/Solution.java) | 简单 |
 | 206 | [反转链表](https://leetcode-cn.com/problems/reverse-linked-list/description/) | [Java](./src/main/java/com/lizeteng/leetcode/easy/_206/Solution.java) | 简单 |
 | 225 | [用队列实现栈](https://leetcode-cn.com/problems/implement-stack-using-queues/description/) | [Java](./src/main/java/com/lizeteng/leetcode/easy/_225/MyStack.java) | 简单 |
