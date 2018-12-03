@@ -31,76 +31,53 @@ package com.lizeteng.leetcode.easy._707;
  */
 public class MyLinkedList {
 
-    private ListNode head;
+    private Node first;
 
-    private ListNode tail;
+    private Node last;
 
     private int size;
+
+    private class Node {
+
+        private int val;
+
+        private Node prev;
+
+        private Node next;
+
+        private Node(int val, Node prev, Node next) {
+            this.val = val;
+            this.prev = prev;
+            this.next = next;
+        }
+    }
 
     public int get(int index) {
         if (!isElementIndex(index)) {
             return -1;
         }
 
-        ListNode tempListNode = head;
-
-        for (int i = 0; i < index; i++){
-            tempListNode = tempListNode.next;
-        }
-
-        return tempListNode.val;
+        return node(index).val;
     }
 
     public void addAtHead(int val) {
-        ListNode newListNode = new ListNode(val);
-        newListNode.next = head;
-
-        head = newListNode;
-
-        if (tail == null) {
-            tail = head;
-        }
-
-        size++;
+        linkFirst(val);
     }
 
     public void addAtTail(int val) {
-        if (tail != null) {
-            ListNode newListNode = new ListNode(val);
-
-            tail.next = newListNode;
-            tail = newListNode;
-
-            size++;
-        } else {
-            addAtHead(val);
-        }
+        linkLast(val);
     }
 
     public void addAtIndex(int index, int val) {
-        if (index < 0 || index > size) {
+        if (!isPositionIndex(index)) {
             return;
         }
 
         if (index == size) {
-            addAtTail(val);
-
-            return;
+            linkLast(val);
+        } else {
+            linkBefore(index, val);
         }
-
-        ListNode prev = null, tempListNode = head;
-
-        for (int i = 0; i < index; i++) {
-            prev = tempListNode;
-            tempListNode = tempListNode.next;
-        }
-
-        ListNode newListNode = new ListNode(val);
-        newListNode.next = tempListNode;
-
-        prev.next = newListNode;
-
-        size++;
     }
 
     public void deleteAtIndex(int index) {
@@ -108,42 +85,92 @@ public class MyLinkedList {
             return;
         }
 
+        Node node = node(index);
+
+        if (node.prev != null) {
+            node.prev.next = node.next;
+        } else {
+            first = node.next;
+        }
+
+        if (node.next != null) {
+            node.next.prev = node.prev;
+        } else {
+            last = node.prev;
+        }
+
         size--;
+    }
 
-        if (head == tail) {
-            head = null;
-            tail = null;
+    private void linkBefore(int index, int val) {
+        Node node = node(index);
+        Node newNode = new Node(val, node.prev, node);
 
-            return;
+        if (node.prev != null) {
+            node.prev.next = newNode;
+        } else {
+            first = newNode;
         }
 
-        ListNode prev = null, tempListNode = head;
+        node.prev = newNode;
 
-        for (int i = 0; i < index; i++){
-            prev = tempListNode;
-            tempListNode = tempListNode.next;
+        size++;
+    }
+
+    private void linkFirst(int val) {
+        Node newNode = new Node(val, null, first);
+
+        if (first != null) {
+            first.prev = newNode;
+        } else {
+            last = newNode;
         }
 
-        if (tail == prev.next) {
-            tail = prev;
+        first = newNode;
+
+        size++;
+    }
+
+    private void linkLast(int val) {
+        Node newNode = new Node(val, last, null);
+
+        if (last != null) {
+            last.next = newNode;
+        } else {
+            first = newNode;
         }
 
-        prev.next = prev.next.next;
+        last = newNode;
+
+        size++;
+    }
+
+    private Node node(int index) {
+        if (index < (size >> 1)) {
+            Node node = first;
+
+            for (int i = 0; i < index; i++) {
+                node = node.next;
+            }
+
+            return node;
+        } else {
+            Node node = last;
+
+            for (int i = size - 1; i > index; i--) {
+                node = node.prev;
+            }
+
+            return node;
+        }
+    }
+
+    private boolean isPositionIndex(int index) {
+        return index >= 0 && index <= size;
     }
 
     private boolean isElementIndex(int index) {
         return index >= 0 && index < size;
-    }
-
-    private class ListNode {
-
-        private int val;
-
-        private ListNode next;
-
-        private ListNode(int val) {
-            this.val = val;
-        }
     }
 
     public static void main(String[] args) {
@@ -160,5 +187,7 @@ public class MyLinkedList {
         myLinkedList.deleteAtIndex(1);
 
         System.out.println(myLinkedList.get(1));
+
+        System.out.println(myLinkedList.get(0));
     }
 }
