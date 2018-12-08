@@ -50,3 +50,4 @@
 | 707 | [设计链表](https://leetcode-cn.com/problems/design-linked-list/description/) | [Java](./src/main/java/com/lizeteng/leetcode/easy/_707/MyLinkedList.java) | 简单 |
 | 725 | [分隔链表](https://leetcode-cn.com/problems/split-linked-list-in-parts/description/) | [Java](./src/main/java/com/lizeteng/leetcode/medium/_725/Solution.java) | 中等 |
 | 876 | [链表的中间结点](https://leetcode-cn.com/problems/middle-of-the-linked-list/description/) | [Java](./src/main/java/com/lizeteng/leetcode/easy/_876/Solution.java) | 简单 |
+| 945 | [使数组唯一的最小增量](https://leetcode-cn.com/problems/minimum-increment-to-make-array-unique/description/) | [Java](./src/main/java/com/lizeteng/leetcode/medium/_945/Solution.java) | 中等 |
